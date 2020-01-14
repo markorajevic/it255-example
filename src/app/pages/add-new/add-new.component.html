@@ -1,0 +1,19 @@
+<form [formGroup]="form" class="container mt-5 pt-5" (ngSubmit)="submitForm()">
+        <div class="form-group">
+        <label for="title">Title</label>
+        <input class="form-control" formControlName="title" type="text" name="title">
+        </div>
+        <div class="form-group">
+        <label for="body">Body</label>
+        <input class="form-control" formControlName="body" type="text" name="body">
+    </div>
+    <div class="form-group">
+    <label for="userId">userId</label>
+    <input class="form-control" formControlName="userId" type="number"
+    name="userId">
+    </div>
+    <div class="col button-holder d-flex justify-content-center align-items-center
+    mt-4">
+    <button type="submit" name="submit" class="btn btn-success">Dodaj</button>
+    </div>
+    </form>

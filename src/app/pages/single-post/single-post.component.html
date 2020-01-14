@@ -1,0 +1,11 @@
+<div class="container mt-5">
+  {{fetchDone}}
+  <div *ngIf="post">
+    <h1 class="text-center">{{post.title}}</h1>
+    <p>{{post.body}}</p>
+    <a [routerLink]="['/articles']" class="btn btn-primary">Read all articles</a>
+  </div>
+  <h1 *ngIf="!post && fetchDone">
+      Nema posta
+  </h1>
+</div>
